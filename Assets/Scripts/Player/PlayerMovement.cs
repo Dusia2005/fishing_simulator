@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed = 10f;       // обычная скорость
     public float runSpeed = 12f;       // скорость бега
     public float gravity = -9.81f;
-    public float jumpHeight = 5f;
+    public float jumpHeight = 6f;
 
     private CharacterController controller;
     private Vector3 velocity;
