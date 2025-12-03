@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40f04087c3149ff41b8d4c5c41a5c080
+guid: 83eda62f49a39bc46b61ab73d3269c57
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: A
-    second: {fileID: 2100000, guid: 431c086b41add664cad563e1248bd04c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Body_boat
-    second: {fileID: 2100000, guid: 431c086b41add664cad563e1248bd04c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rope
-    second: {fileID: 2100000, guid: 431c086b41add664cad563e1248bd04c, type: 2}
+      name: _5_tree
+    second: {fileID: 2100000, guid: 8beb855f0e8a8724c93a43edadb65a69, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

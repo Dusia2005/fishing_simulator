@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40f04087c3149ff41b8d4c5c41a5c080
+guid: 3b807fef5143c9b44a4d2f0e8170be83
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: A
-    second: {fileID: 2100000, guid: 431c086b41add664cad563e1248bd04c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Body_boat
-    second: {fileID: 2100000, guid: 431c086b41add664cad563e1248bd04c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rope
-    second: {fileID: 2100000, guid: 431c086b41add664cad563e1248bd04c, type: 2}
+      name: Rock_1_
+    second: {fileID: 2100000, guid: 08a354f7577ea87428251d2c13ff6e98, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
