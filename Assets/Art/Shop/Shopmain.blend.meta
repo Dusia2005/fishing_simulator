@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: a13c5cca507fb704f8479dead6daf3e3, type: 2}
+    second: {fileID: 2100000, guid: 562f7143579c7a84b884a2085cd33864, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Scene_-_Root
-    second: {fileID: 2100000, guid: 342e37cd6be6c2444b31d0b64a481d01, type: 2}
+    second: {fileID: 2100000, guid: 562f7143579c7a84b884a2085cd33864, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Scene_-_Root.001
-    second: {fileID: 2100000, guid: 342e37cd6be6c2444b31d0b64a481d01, type: 2}
+    second: {fileID: 2100000, guid: 562f7143579c7a84b884a2085cd33864, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Scene_-_Root.002
-    second: {fileID: 2100000, guid: 342e37cd6be6c2444b31d0b64a481d01, type: 2}
+    second: {fileID: 2100000, guid: 562f7143579c7a84b884a2085cd33864, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -38,7 +38,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wall_wood
-    second: {fileID: 2100000, guid: 342e37cd6be6c2444b31d0b64a481d01, type: 2}
+    second: {fileID: 2100000, guid: 562f7143579c7a84b884a2085cd33864, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -48,7 +48,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wood_stump
-    second: {fileID: 2100000, guid: e5e9c62c2bb2ac54db180cb83ca88ffb, type: 2}
+    second: {fileID: 2100000, guid: 562f7143579c7a84b884a2085cd33864, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

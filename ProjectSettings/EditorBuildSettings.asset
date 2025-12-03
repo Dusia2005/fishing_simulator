@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: 90509f7f1045f6e4db0daa6d7bb2839e
   - enabled: 1
+    path: Assets/Scenes/River.unity
+    guid: 6d8145b7ecfde004db84ae58b8b2dde0
+  - enabled: 1
+    path: Assets/Scenes/Lake.unity
+    guid: 291c175534dac4f4fb3544a4750e5810
+  - enabled: 1
     path: Assets/Scenes/Sea.unity
     guid: e6cc01cf242805b489a001be1ad482d4
   - enabled: 0
