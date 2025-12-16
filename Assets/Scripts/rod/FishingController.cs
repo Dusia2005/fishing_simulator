@@ -2,14 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-[System.Serializable]
-public class FishData
-{
-    public string fishName;
-    public Sprite fishSprite;
-    [Range(0f, 100f)]
-    public float spawnChance;
-}
+
 
 public class FishingController : MonoBehaviour
 {
@@ -189,12 +182,55 @@ public class FishingController : MonoBehaviour
 
     private void CatchFish()
     {
+        if (PlayerProgress.Instance == null)
+        {
+            Debug.LogError("PlayerProgress.Instance не найден");
+            EndFishing(false);
+            return;
+        }
+
+        if (fishDataArray == null || fishDataArray.Length == 0)
+        {
+            Debug.LogError("FishDataArray пуст");
+            EndFishing(false);
+            return;
+        }
+
         FishData caughtFish = GetRandomFish();
-        fishNameText.text = caughtFish.fishName;
-        fishImage.sprite = caughtFish.fishSprite;
-        fishMenu.SetActive(true);
+        if (caughtFish == null)
+        {
+            Debug.LogError("GetRandomFish вернул null");
+            EndFishing(false);
+            return;
+        }
+
+        if (fishNameText != null)
+            fishNameText.text = caughtFish.fishName;
+
+        if (fishImage != null)
+            fishImage.sprite = caughtFish.fishSprite;
+
+        if (fishMenu != null)
+            fishMenu.SetActive(true);
+
+        // Добавляем очки
+        PlayerProgress.Instance.AddScore(caughtFish.scoreValue);
+
+        // Обновляем доступ к локациям
+        LocationManager lm = FindObjectOfType<LocationManager>();
+        if (lm != null)
+        {
+            lm.UpdateLocationAccess();
+        }
+
+
         EndFishing(true);
     }
+
+
+
+
+
 
     private void EndFishing(bool success)
     {
@@ -285,4 +321,5 @@ public class FishingController : MonoBehaviour
 
         return fishDataArray[0];
     }
+    
 }

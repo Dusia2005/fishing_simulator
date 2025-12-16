@@ -43,9 +43,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f; // Включаем время при переходе
         SceneManager.LoadScene(sceneIndex);
     }
-    public void LoadMenu() 
-    { 
-        Time.timeScale = 1f; 
-        SceneManager.LoadScene("Menu"); 
+    public void LoadMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
     }
 }
