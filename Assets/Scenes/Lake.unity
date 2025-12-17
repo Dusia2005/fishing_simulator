@@ -20262,22 +20262,46 @@ MonoBehaviour:
   timerText: {fileID: 645480448}
   resultText: {fileID: 1452426541}
   fishDataArray:
-  - fishName: "\u041A\u0430\u0440\u0430\u0441\u044C"
-    fishSprite: {fileID: 21300000, guid: 6b27c959cda202d43b126ade651f2a79, type: 3}
-    spawnChance: 41.5
-    scoreValue: 10
-  - fishName: "\u041A\u0430\u0440\u043F"
-    fishSprite: {fileID: 21300000, guid: d73dcc94ad45ec34a84973787ec14d7a, type: 3}
-    spawnChance: 30.9
-    scoreValue: 20
-  - fishName: "\u0429\u0443\u043A\u0430"
-    fishSprite: {fileID: 21300000, guid: 1b675a05db21f0449bd2eecbb519ab03, type: 3}
-    spawnChance: 15.2
-    scoreValue: 30
-  - fishName: "\u0421\u043E\u043C"
-    fishSprite: {fileID: 21300000, guid: 066467aa3200f0948b7db58ed9a9d5f5, type: 3}
+  - fishName: "\u0421\u0435\u043B\u0435\u0434\u044C"
+    fishSprite: {fileID: 21300000, guid: 635831785d7aacc4b9d7a66fea3ff098, type: 3}
+    spawnChance: 18
+    scoreValue: 2
+  - fishName: "\u041A\u0430\u043C\u0431\u0430\u043B\u0430"
+    fishSprite: {fileID: 21300000, guid: 779557252a224a14383e325d54ce6ecc, type: 3}
+    spawnChance: 15
+    scoreValue: 3
+  - fishName: "\u041A\u043E\u0440\u044E\u0448\u043A\u0430"
+    fishSprite: {fileID: 21300000, guid: 439a3ac3d12b75f4d9f57e641154ac41, type: 3}
+    spawnChance: 16
+    scoreValue: 3
+  - fishName: "\u0411\u044B\u0447\u043E\u043A"
+    fishSprite: {fileID: 21300000, guid: 3189bccec2042bc4982b3c74ad76e19e, type: 3}
+    spawnChance: 10
+    scoreValue: 4
+  - fishName: "\u0422\u0440\u0435\u0441\u043A\u0430"
+    fishSprite: {fileID: 21300000, guid: ec9a748c40247414b83a728783f4fda6, type: 3}
+    spawnChance: 12
+    scoreValue: 5
+  - fishName: "\u041A\u0435\u0444\u0430\u043B\u044C"
+    fishSprite: {fileID: 21300000, guid: d411dfd0a00959d4381507cdf0d97b63, type: 3}
     spawnChance: 8
-    scoreValue: 50
+    scoreValue: 7
+  - fishName: "\u041C\u043E\u0439\u0432\u0430"
+    fishSprite: {fileID: 21300000, guid: d9b763952d77e474681555c498a9f395, type: 3}
+    spawnChance: 7
+    scoreValue: 7
+  - fishName: "\u041F\u0438\u043A\u0448\u0430"
+    fishSprite: {fileID: 21300000, guid: e9a1d7d04a6870f44976fce5c7ce9767, type: 3}
+    spawnChance: 6
+    scoreValue: 10
+  - fishName: "\u0421\u0430\u0439\u0434\u0430"
+    fishSprite: {fileID: 21300000, guid: 18457fe33b711a8449d3d554dae0b126, type: 3}
+    spawnChance: 5
+    scoreValue: 12
+  - fishName: "\u041C\u043E\u0440\u0441\u043A\u043E\u0439 \u043E\u043A\u0443\u043D\u044C"
+    fishSprite: {fileID: 21300000, guid: d7ac6f3847dd5e34e8c5d29a408384c6, type: 3}
+    spawnChance: 3
+    scoreValue: 20
   percentageDecreaseRate: 6
   biteWaitText: {fileID: 2074732926}
   animator: {fileID: 1848789453}

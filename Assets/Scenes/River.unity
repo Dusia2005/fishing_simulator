@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.7653525, g: 0.837723, b: 0.8584906, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.003
@@ -1283,22 +1283,46 @@ MonoBehaviour:
   timerText: {fileID: 1881603797}
   resultText: {fileID: 879950487}
   fishDataArray:
+  - fishName: "\u041F\u043B\u043E\u0442\u0432\u0430"
+    fishSprite: {fileID: 21300000, guid: 6c79008dcac96a340a1655bb754f695c, type: 3}
+    spawnChance: 20
+    scoreValue: 1
+  - fishName: "\u041E\u043A\u0443\u043D\u044C"
+    fishSprite: {fileID: 21300000, guid: 73d5eb4f418ca054089619f5a33d6dee, type: 3}
+    spawnChance: 18
+    scoreValue: 2
   - fishName: "\u041A\u0430\u0440\u0430\u0441\u044C"
-    fishSprite: {fileID: 21300000, guid: 74aed127d2b2d57439f492836da1c358, type: 3}
-    spawnChance: 41.5
-    scoreValue: 10
-  - fishName: "\u041A\u0430\u0440\u043F"
-    fishSprite: {fileID: 21300000, guid: 4806bee4cb9580647b9397a84d2f805a, type: 3}
-    spawnChance: 30.9
-    scoreValue: 20
+    fishSprite: {fileID: 21300000, guid: 6b27c959cda202d43b126ade651f2a79, type: 3}
+    spawnChance: 15
+    scoreValue: 2
   - fishName: "\u0429\u0443\u043A\u0430"
-    fishSprite: {fileID: 21300000, guid: 9e8e1f82212fd584b8fe532d841c1a7e, type: 3}
-    spawnChance: 15.2
-    scoreValue: 30
-  - fishName: "\u0421\u043E\u043C"
-    fishSprite: {fileID: 21300000, guid: 07a1170b9c6474147939a2fd091aac1f, type: 3}
+    fishSprite: {fileID: 21300000, guid: 1b675a05db21f0449bd2eecbb519ab03, type: 3}
+    spawnChance: 12
+    scoreValue: 4
+  - fishName: "\u041B\u0435\u0449"
+    fishSprite: {fileID: 21300000, guid: 3765a0218ea27824fb6e9b3c2f8a6671, type: 3}
+    spawnChance: 10
+    scoreValue: 5
+  - fishName: "\u041A\u0430\u0440\u043F"
+    fishSprite: {fileID: 21300000, guid: d73dcc94ad45ec34a84973787ec14d7a, type: 3}
     spawnChance: 8
-    scoreValue: 50
+    scoreValue: 6
+  - fishName: "\u0421\u0443\u0434\u0430\u043A"
+    fishSprite: {fileID: 21300000, guid: a72e80f0a170c5b43a6ae7809ea374bc, type: 3}
+    spawnChance: 5
+    scoreValue: 7
+  - fishName: "\u042F\u0437\u044C"
+    fishSprite: {fileID: 21300000, guid: 3531f29c92d59d445b0904c3d0870dc4, type: 3}
+    spawnChance: 5
+    scoreValue: 8
+  - fishName: "\u0416\u0435\u0440\u0435\u0445"
+    fishSprite: {fileID: 21300000, guid: 788f71a32237bed41b99953fa68e09d2, type: 3}
+    spawnChance: 4
+    scoreValue: 10
+  - fishName: "\u0421\u043E\u043C"
+    fishSprite: {fileID: 21300000, guid: 066467aa3200f0948b7db58ed9a9d5f5, type: 3}
+    spawnChance: 3
+    scoreValue: 15
   percentageDecreaseRate: 6
   biteWaitText: {fileID: 1880092085}
   animator: {fileID: 919132148511527566}
@@ -3474,7 +3498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608014797}
   m_LocalRotation: {x: -0.4244568, y: 0.56554097, z: 0.56554055, w: 0.424457}
-  m_LocalPosition: {x: -49, y: -121.19995, z: -86.599976}
+  m_LocalPosition: {x: -49.4, y: -122.8, z: -84.2}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1236594353}
@@ -19880,7 +19904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7579192859157556740}
   m_LocalRotation: {x: -0.5, y: 0.49999997, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 27.8, y: -121.4, z: -188}
+  m_LocalPosition: {x: 27.8, y: -121.4, z: -197.02}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1033791046}
