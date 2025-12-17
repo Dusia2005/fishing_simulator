@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class PlayerProgress : MonoBehaviour
 {
     public static PlayerProgress Instance;
+
     public int totalScore;
+
+    //  Уникальные пойманные рыбы
+    private HashSet<string> caughtFishTypes = new HashSet<string>();
 
     private void Awake()
     {
@@ -21,6 +26,15 @@ public class PlayerProgress : MonoBehaviour
     public void AddScore(int amount)
     {
         totalScore += amount;
-        Debug.Log("Очки: " + totalScore);
+    }
+
+    public void RegisterFish(string fishName)
+    {
+        caughtFishTypes.Add(fishName);
+    }
+
+    public int GetCaughtFishCount()
+    {
+        return caughtFishTypes.Count;
     }
 }

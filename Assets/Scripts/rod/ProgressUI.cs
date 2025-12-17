@@ -3,42 +3,53 @@ using UnityEngine.UI;
 
 public class ProgressUI : MonoBehaviour
 {
-    public Text scoreText;
-    public Image fillBar;
-    public Text totalScoreText;
-    public Text pointsToNextText;
-    public LocationManager locationManager; // ссылка на LocationManager
+    public Text progressText;
+    public Text fishCountText;
 
-    private void Update()
+    public LocationManager locationManager;
+    public int totalFishTypes; // Сколько ВСЕГО видов рыб в игре
+
+    void Update()
     {
-        UpdateUI();
+        UpdateFishCount();
+        UpdateLocationProgress();
     }
 
-    public void UpdateUI()
+    void UpdateFishCount()
     {
-        if (PlayerProgress.Instance == null || locationManager == null) return;
+        int caught = PlayerProgress.Instance.GetCaughtFishCount();
+        fishCountText.text = $"Видов рыб поймано: {caught}/{totalFishTypes}";
+    }
 
+    void UpdateLocationProgress()
+    {
         int totalScore = PlayerProgress.Instance.totalScore;
 
-        // Ищем следующую локацию, которая ещё не доступна
-        LocationData nextLocation = null;
-        foreach (var loc in locationManager.locations)
-        {
-            if (totalScore < loc.requiredScore)
-            {
-                nextLocation = loc;
-                break;
-            }
-        }
+        LocationData nextLocation = GetNextLockedLocation();
 
-        if (nextLocation != null)
+        if (nextLocation == null)
+        {
+            //  ПОСЛЕДНЯЯ ЛОКАЦИЯ ОТКРЫТА
+            progressText.text = "Все локации открыты!";
+        }
+        else
         {
             int pointsToNext = Mathf.Max(nextLocation.requiredScore - totalScore, 0);
-            scoreText.text = $"Всего очков: {totalScore}\n " +
+
+            progressText.text =
+                $"Очки: {totalScore}/{nextLocation.requiredScore}\n" +
                 $"До следующей локации: {pointsToNext}";
+        }
+    }
 
-
+    LocationData GetNextLockedLocation()
+    {
+        foreach (var loc in locationManager.locations)
+        {
+            if (PlayerProgress.Instance.totalScore < loc.requiredScore)
+                return loc;
         }
 
+        return null; // все открыты
     }
 }

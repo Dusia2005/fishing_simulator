@@ -215,6 +215,7 @@ public class FishingController : MonoBehaviour
 
         // Добавляем очки
         PlayerProgress.Instance.AddScore(caughtFish.scoreValue);
+        PlayerProgress.Instance.RegisterFish(caughtFish.fishName);
 
         // Обновляем доступ к локациям
         LocationManager lm = FindObjectOfType<LocationManager>();
